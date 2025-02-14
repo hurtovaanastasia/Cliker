@@ -22,12 +22,14 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-
     }
-
     public void onClickBatton(View view) {
         count++;
+        TextView txt= findViewById(R.id.txtCounter);
+        txt.setText(count.toString());
+    }
+    public void RemoveButton(View view) {
+        count = 0;
         TextView txt= findViewById(R.id.txtCounter);
         txt.setText(count.toString());
     }

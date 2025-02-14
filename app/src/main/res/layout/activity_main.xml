@@ -4,26 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:background="#CD95D7"
     android:layout_height="match_parent"
+    android:background="#B3A8BF"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Счетчик людей:"
+        android:layout_width="116dp"
+        android:layout_height="31dp"
+        android:text="Счетчик котиков:"
+        android:textColor="#1B0108"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.15" />
 
     <TextView
         android:id="@+id/txtCounter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="136dp"
+        android:textColor="#1B0108"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,13 +34,40 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="215dp"
-        android:layout_height="127dp"
-        android:layout_marginBottom="132dp"
+        android:layout_width="162dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="148dp"
         android:onClick="onClickBatton"
-        android:text="+"
+        android:text="Добавить один"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#1B0108"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="162dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="148dp"
+        android:onClick="RemoveButton"
+        android:text="Сбросить значение"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#1B0108"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="243dp"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.435"
+        app:srcCompat="@drawable/pngwing_com" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
